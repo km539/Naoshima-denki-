@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html　lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ナオシマ電業株式会社</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1325c2723b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="header">
+      <nav>
+        <a href="index.html" class="company-logo">
+          <img src="logo/logo_small.png" alt="" height="40" width="auto"><br>
+        </a>
+        <div class="nav-links">
+          <ul id="MenuItems">
+            <li><a href="company.html">企業情報</a></li>
+            <li><a href="business.html">事業紹介</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+          <div class="nav-menu">
+              <i class="fas fa-bars" onclick="menutoggle()"></i>
+          </div>
+        <div>
+      </nav>
+
+      <div class="text-box">
+        <h1>Living With Electricity</h1>
+        <p>〜　電気と人の架け橋に　〜</p>
+      </div>
+    </section>
+
+    <section>
+       <div class="company-info">
+           <h1>About Us</h1>
+           <h2>- 会社について -</h2>
+           <p class="comapany-intro">私たちは現代社会で欠かすことができない電気・通信・消防設備などの
+インフラ設備の電気工事を施工するプロフェッショナル集団です。<br>
+社会に欠かせない電気を 学校や福祉施設の建物から公共設備に至るまで、安心・安全をモットーに、
+これからも幅広いお客様の信頼を得た弊社の電気工事を通じて、地域を支えてゆきます。</p>
+           <div class="info-button">
+              <a href="company.html" class="hero-btn">詳細を見る</a>
+           </div>
+       </div>
+    </section>
+
+    <section class="recruit-info">
+         <div class="box">
+           <div class="recruit-pic">
+               <img src="pictures/pic-comopany.jpg" width="600" height="430">
+           </div>
+         </div>
+
+         <div class="box">
+           <div class="recruit-content">
+              <h1>Recruit</h1>
+              <h2>- 採用情報 -</h2>
+
+              <p>ナオシマ電業で一緒に働いてくれる人、募集しています。</p>
+              <div class="recruit-button">
+                  <a href="recruit.html" class="hero-btn">詳細を見る</a>
+              </div>
+           </div>
+         </div>
+
+    </section>
+
+    <section>
+      <div class="fotter-bottom">
+          <p>Copyright <i class="far fa-copyright"></i> 2021 Naoshima-denki co.,ltd All rights reserved.</p>
+      </div>
+    </section>
+
+    <!--- js for toggle menu ---------->
+    <script type="text/javascript">
+          var MenuItems = document.getElementById("MenuItems");
+
+          MenuItems.style.maxHeight = "0px";
+
+          function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                 MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                 MenuItems.style.maxHeight = "0px";
+            }
+          }
+    </script>
+</body>
+
+</html>

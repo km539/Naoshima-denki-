@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html　lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ナオシマ電業株式会社</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1325c2723b.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery-->
+    <!--<script src="jquery-3.5.1.min.js"></script> -->
+</head>
+
+<body>
+    <section class="company-header">
+      <nav>
+        <a href="index.html" class="company-logo">
+          <img src="logo/logo_small.png" alt="" height="40" width="auto">
+        </a>
+        <div class="nav-links">
+          <ul id="MenuItems">
+            <li><a href="company.html">企業情報</a></li>
+            <li><a href="business.html">事業紹介</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+          <div class="nav-menu">
+              <i class="fas fa-bars" onclick="menutoggle()"></i>
+          </div>
+        <div>
+      </nav>
+
+      <div class="bread-nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li>
+            <span><i class="fas fa-angle-right"></i></span>
+            お問い合わせ
+          </li>
+        </ul>
+      </div>
+
+      <div class="company-text-box">
+        <h1>お問い合わせ</h1>
+        <h3>- Contact -</h3>
+
+      </div>
+    </section>
+
+    <section class="contact-box">
+
+        <div class="contact-intro">
+           <p>メールでお問い合わせの際は、以下のフォームよりお問い合わせください。</p>
+        </div>
+
+        <div class="contact-table">
+           <form action="contact.php" method="post" >
+                <table class="contact-form">
+                  <tr>
+                     <th>お名前 （必須)</th>
+                     <td><input type="text" name="fname1" class="name" placeholder="　田中" />
+                     <input type="text" name="lname1" class="name"
+                     placeholder="　太郎" /></td>
+                  </tr>
+                  <tr>
+                     <th>フリガナ（必須）</th>
+                     <td><input type="text" name="fname2" class="name"
+                      placeholder="　タナカ" />
+                     <input type="text" name="lname2" class="name" placeholder="　タロウ" /></td>
+                  </tr>
+                  <tr>
+                     <th>メールアドレス（必須）</th>
+                     <td><input type="email" name="mail1" class="defalt-size" id="email"
+                      placeholder=" example@mail.com" 
+                      /></td>
+                  </tr>
+                  <tr>
+                     <th>メールアドレス[確認用]</th>
+                     <td><input type="email" name="mail2" class="defalt-size" /></td>
+                  </tr>
+                  <tr>
+                     <th>会社/団体名（必須）</th>
+                     <td><input type="text" name="company" class="defalt-size" /></td>
+                  </tr>
+                  <tr>
+                     <th>電話番号 （必須）</th>
+                     <td><input type="tel" name="tel1" class="tel"
+                      /><span> - </span>
+                     <input type="tel" name="tel2" class="tel"
+                    /><span> - </span>
+                   <input type="tel" name="tel3" class="tel"
+                   /></td>
+                  </tr>
+                  <tr>
+
+                     <th>住所（必須）</th>
+
+                     <td>
+                       <div class="address-row">
+                         〒
+                         <input type="text" name="pc1" class="postcode" /><span> - </span>
+                         <input type="text" name="pc2" class="postcode" />
+                       </div>
+
+                       <div class="address-row">
+                         <input type="text" name="address" class="defalt-size" />
+                       </div>
+                     </td>
+
+                  </tr>
+                  <tr>
+                     <th>お問い合わせ内容（必須）</th>
+                     <td>
+                       <textarea name="content" rows="8"></textarea>
+                     </td>
+                  </tr>
+                </table>
+                <div class="contact-button">
+                  <button type="submit">送信内容の確認</button>
+                </div>
+           </form>
+        </div>
+
+    </section>
+
+
+    <section>
+      <div class="fotter-bottom">
+          <p>Copyright <i class="far fa-copyright"></i> 2021 Naoshima-denki co.,ltd All rights reserved.</p>
+      </div>
+    </section>
+
+    <!-- form validasion Jquery-->
+    <script type="text/javascript">
+    </script>
+    <!--- js for toggle menu ---------->
+    <script type="text/javascript">
+          var MenuItems = document.getElementById("MenuItems");
+
+          MenuItems.style.maxHeight = "0px";
+
+          function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                 MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                 MenuItems.style.maxHeight = "0px";
+            }
+          }
+    </script>
+</body>
+
+</html>

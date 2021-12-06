@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html　lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ナオシマ電業株式会社</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1325c2723b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="company-header">
+      <nav>
+        <a href="index.html" class="company-logo">
+          <img src="logo/logo_small.png" alt="" height="40" width="auto">
+        </a>
+        <div class="nav-links">
+          <ul id="MenuItems">
+            <li><a href="company.html">企業情報</a></li>
+            <li><a href="business.html">事業紹介</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+          <div class="nav-menu">
+              <i class="fas fa-bars" onclick="menutoggle()"></i>
+          </div>
+        <div>
+      </nav>
+
+      <div class="bread-nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li>
+            <span><i class="fas fa-angle-right"></i></span>
+            採用情報
+          </li>
+        </ul>
+      </div>
+
+      <div class="company-text-box">
+        <h1>採用情報</h1>
+        <h3>- Recruit -</h3>
+
+      </div>
+    </section>
+
+    <section class="recruit-detals">
+        <h1>募集要項</h1>
+
+        <h2>現在、募集なし。</h2>
+
+        <div class="recruit-contact">
+　　　　　　　<h1>採用のお問い合わせ</h1>
+
+　　　　　　  <div class="recruit-contactUs">
+　　　　　　      <p>まずは電話より連絡をお待ちしております。<br>
+                   連絡先：〒５５３ー００１４　大阪市東淀川区豊新１−２−８<br>
+                   担当：中川<br>
+                   TEL：０６ー６８２９ー７２５８</p>
+　　　　　　  </div>
+        </div>
+    </section>
+    <section>
+      <div class="fotter-bottom">
+          <p>Copyright <i class="far fa-copyright"></i> 2021 Naoshima-denki co.,ltd All rights reserved.</p>
+      </div>
+    </section>
+
+    <!--- js for toggle menu ---------->
+    <script type="text/javascript">
+          var MenuItems = document.getElementById("MenuItems");
+
+          MenuItems.style.maxHeight = "0px";
+
+          function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                 MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                 MenuItems.style.maxHeight = "0px";
+            }
+          }
+    </script>
+</body>
+
+</html>

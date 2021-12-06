@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html　lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>business</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1325c2723b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="company-header">
+      <nav>
+        <a href="index.html" class="company-logo">
+          <img src="logo/logo_small.png" alt="" height="40" width="auto">
+        </a>
+        <div class="nav-links">
+          <ul id="MenuItems">
+            <li><a href="company.html">企業情報</a></li>
+            <li><a href="business.html">事業紹介</a></li>
+            <li><a href="recruit.html">採用情報</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+          <div class="nav-menu">
+              <i class="fas fa-bars" onclick="menutoggle()"></i>
+          </div>
+        <div>
+      </nav>
+
+      <div class="bread-nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li>
+            <span><i class="fas fa-angle-right"></i></span>
+            事業紹介
+          </li>
+        </ul>
+      </div>
+
+      <div class="company-text-box">
+        <h1>事業紹介</h1>
+        <h3>- Business -</h3>
+
+      </div>
+    </section>
+
+    <section class="business-box">
+      <div class="left-box">
+        <div class="business-pic">
+            <img src="pictures/pic4.jpg">
+        </div>
+      </div>
+      <div class="right-box">
+        <h1>電気工事</h1>
+        <p>弊社は創業以来、電気設備工事を施工して参りました。<br>公共施設・商業施設・工場・学校・病院など、社会のあらゆる電気工事を受注して参りました。<br>顧客先と詳細な打ち合わせを行い、様々なニーズに答えながら新製品・新技術・快適な環境をご提案すると同時に、施工した後のアフターサービスも迅速かつ丁寧に対応しています。</p>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="fotter-bottom">
+          <p>Copyright <i class="far fa-copyright"></i> 2021 Naoshima-denki co.,ltd All rights reserved.</p>
+      </div>
+    </section>
+
+    <!--- js for toggle menu ---------->
+    <script type="text/javascript">
+          var MenuItems = document.getElementById("MenuItems");
+
+          MenuItems.style.maxHeight = "0px";
+
+          function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                 MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                 MenuItems.style.maxHeight = "0px";
+            }
+          }
+    </script>
+</body>
+
+</html>
